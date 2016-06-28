@@ -31,12 +31,12 @@
     },
     "css": {
       "src": "stylesheets",
-      "dest": "stylesheets",
+      "dest": "css",
       "autoprefixer": {
         "browsers": ["last 3 version"]
       },
       "sass": {
-        "indentedSyntax": true,
+        "indentedSyntax": false,
         "includePaths": [
           "./node_modules/normalize.css"
         ]

@@ -1,0 +1,28 @@
+/**
+ * navbar
+ */
+
+.navbar {
+	border-bottom: 1px solid whitesmoke;
+	padding-top: $gutter;
+	margin-bottom: 2*$gutter;
+
+	&__title {
+		a {
+			color: pink;
+			text-transform: none;
+			text-decoration: none;
+		}
+	}
+
+	// dark theme
+	&--dark {
+		background-color: pink;
+
+		.navbar__title {
+			a {
+				color: black;
+			}
+		}
+	}
+}
