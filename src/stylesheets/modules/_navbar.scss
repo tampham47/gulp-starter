@@ -19,9 +19,11 @@
 	&--dark {
 		background-color: pink;
 
-		.navbar__title {
-			a {
-				color: black;
+		.navbar {
+			&__title {
+				a {
+					color: black;
+				}
 			}
 		}
 	}
