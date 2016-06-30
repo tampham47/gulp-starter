@@ -519,6 +519,62 @@
 	},
 	"buffers":
 	[
+		{
+			"file": "src/html/layouts/application.html",
+			"settings":
+			{
+				"buffer_size": 885,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "src/stylesheets/modules/_navbar.scss",
+			"settings":
+			{
+				"buffer_size": 337,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "public/index.html",
+			"settings":
+			{
+				"buffer_size": 1249,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "src/html/index.html",
+			"settings":
+			{
+				"buffer_size": 906,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "src/html/forms.html",
+			"settings":
+			{
+				"buffer_size": 1480,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "src/html/buttons.html",
+			"settings":
+			{
+				"buffer_size": 727,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"contents": "\nGiới thiệu về frontend\n- tại sao lại nên quan tâm đến frontend.\n- hầu hết các stucks gặp phải đều dzo không nắm rõ về frontend\n\nQuá trình làm việc với frontend hiện tại\n- gulp-starter\n- skeleton-scss\n- browserify\n\nTại sao lại là BEM\n- backend thì nó đã được chuẩn hóa thông qua các design pattern\n- frontend chỉ mới bắt đầu\n\nAuto scripts\n- push to gh-pages\n- deploy\n\nGiới thiệu về websaigon.co\n- Dự án giáo dục",
+			"settings":
+			{
+				"buffer_size": 411,
+				"line_ending": "Unix"
+			}
+		}
 	],
 	"build_system": "",
 	"build_system_choices":
@@ -528,9 +584,17 @@
 	"command_palette":
 	{
 		"height": 392.0,
-		"last_filter": "prev",
+		"last_filter": "css",
 		"selected_items":
 		[
+			[
+				"css",
+				"Set Syntax: CSS3"
+			],
+			[
+				"preview",
+				"Markdown Preview: Preview in Browser"
+			],
 			[
 				"prev",
 				"Markdown Preview: Preview in Browser"
@@ -590,10 +654,6 @@
 			[
 				"html",
 				"HTMLPrettify"
-			],
-			[
-				"preview",
-				"Markdown Preview: Preview in Browser"
 			],
 			[
 				"low",
@@ -757,9 +817,17 @@
 	},
 	"expanded_folders":
 	[
+		"/Users/caphao/projects/gulp-starter",
+		"/Users/caphao/projects/gulp-starter/public",
+		"/Users/caphao/projects/gulp-starter/src",
+		"/Users/caphao/projects/gulp-starter/src/html",
+		"/Users/caphao/projects/gulp-starter/src/html/layouts",
+		"/Users/caphao/projects/gulp-starter/src/stylesheets"
 	],
 	"file_history":
 	[
+		"/Users/caphao/projects/gulp-starter/author.md",
+		"/Users/caphao/projects/gulp-starter/package.json",
 		"/Users/caphao/projects/duplex/package.json",
 		"/Users/caphao/projects/duplex/README.md",
 		"/Users/caphao/projects/sg-uob-html_sales_demo/src/html/TransactionSearch.html",
@@ -885,9 +953,7 @@
 		"/Users/caphao/projects/sg-uob-html_sales_demo/src/html/_TEST-Grid.html",
 		"/Users/caphao/projects/sg-uob-html_sales_demo/_bibplus/portal/screen/FundTransferScreen__q__tnxtype__eq__01__an__mode__eq__REMITTANCE_CORP__an__option__eq__TEMPLATE.html",
 		"/Users/caphao/projects/sg-uob-html_sales_demo/src/html/shared/footer.html",
-		"/Users/caphao/projects/sg-uob-html_sales_demo/release/public-jun09/portal/screen/AjaxScreen/action/GetJSONData__q__listdef__eq__uob__sl__listdef__sl__customer__sl__FT__sl__openTemplateRemittanceList.json",
-		"/Users/caphao/projects/sg-uob-html_sales_demo/_bibplus/portal/screen/AjaxScreen/action/GetJSONData__q__listdef__eq__uob__sl__listdef__sl__customer__sl__FT__sl__openUnsignedLEPInitiationList.json",
-		"/Users/caphao/projects/sg-uob-html_sales_demo/_bibplus/portal/screen/FundTransferScreen__q__mode__eq__UNSIGNED__an__tnxtype__eq__01.html"
+		"/Users/caphao/projects/sg-uob-html_sales_demo/release/public-jun09/portal/screen/AjaxScreen/action/GetJSONData__q__listdef__eq__uob__sl__listdef__sl__customer__sl__FT__sl__openTemplateRemittanceList.json"
 	],
 	"find":
 	{
@@ -1193,8 +1259,220 @@
 	"groups":
 	[
 		{
+			"selected": 1,
 			"sheets":
 			[
+				{
+					"buffer": 0,
+					"file": "src/html/layouts/application.html",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 885,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								605,
+								605
+							]
+						],
+						"settings":
+						{
+							"color_scheme": "Packages/User/Color Highlighter/themes/Monokai Phoenix (SL).tmTheme",
+							"syntax": "Packages/HTML/HTML.sublime-syntax",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 251.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "src/stylesheets/modules/_navbar.scss",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 337,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								263,
+								263
+							]
+						],
+						"settings":
+						{
+							"color_scheme": "Packages/User/Color Highlighter/themes/Monokai Phoenix (SL).tmTheme",
+							"syntax": "Packages/SCSS/SCSS.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "public/index.html",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1249,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"color_scheme": "Packages/User/Color Highlighter/themes/Monokai Phoenix (SL).tmTheme",
+							"syntax": "Packages/HTML/HTML.sublime-syntax",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 33.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 4,
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "src/html/index.html",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 906,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								218,
+								218
+							]
+						],
+						"settings":
+						{
+							"color_scheme": "Packages/User/Color Highlighter/themes/Monokai Phoenix (SL).tmTheme",
+							"syntax": "Packages/HTML/HTML.sublime-syntax",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 5,
+					"type": "text"
+				},
+				{
+					"buffer": 4,
+					"file": "src/html/forms.html",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1480,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"color_scheme": "Packages/User/Color Highlighter/themes/Monokai Phoenix (SL).tmTheme",
+							"syntax": "Packages/HTML/HTML.sublime-syntax",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 6,
+					"type": "text"
+				},
+				{
+					"buffer": 5,
+					"file": "src/html/buttons.html",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 727,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								248,
+								248
+							]
+						],
+						"settings":
+						{
+							"color_scheme": "Packages/User/Color Highlighter/themes/Monokai Phoenix (SL).tmTheme",
+							"syntax": "Packages/HTML/HTML.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 3,
+					"type": "text"
+				},
+				{
+					"buffer": 6,
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 411,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								338,
+								326
+							]
+						],
+						"settings":
+						{
+							"auto_name": "",
+							"color_scheme": "Packages/User/Color Highlighter/themes/Monokai Phoenix (SL).tmTheme",
+							"syntax": "Packages/Text/Plain text.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 93.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 2,
+					"type": "text"
+				}
 			]
 		}
 	],
@@ -1795,7 +2073,7 @@
 	"show_open_files": false,
 	"show_tabs": true,
 	"side_bar_visible": true,
-	"side_bar_width": 258.0,
+	"side_bar_width": 306.0,
 	"status_bar_visible": true,
 	"template_settings":
 	{

@@ -29,6 +29,9 @@ var browserSyncTask = function() {
     require('webpack-hot-middleware')(compiler)
   ]
 
+  if (process.env.PORT) {
+    config.tasks.browserSync.port = process.env.PORT;
+  }
   browserSync.init(config.tasks.browserSync)
 }
 
