@@ -31,6 +31,9 @@ var browserSyncTask = function() {
 
   if (process.env.PORT) {
     config.tasks.browserSync.port = process.env.PORT;
+    config.tasks.browserSync.ui = {
+      port: parseInt(process.env.PORT) + 1
+    };
   }
   browserSync.init(config.tasks.browserSync)
 }
