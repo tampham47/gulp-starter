@@ -1,14 +1,15 @@
-var config  = require('../config')
+if(!TASK_CONFIG.static) return
+
 var changed = require('gulp-changed')
 var gulp    = require('gulp')
 var path    = require('path')
 
 var paths = {
   src: [
-    path.join(config.root.src, config.tasks.static.src, '/**'),
-    path.join('!' + config.root.src, config.tasks.static.src, '/README.md')
+    path.resolve(process.env.PWD, PATH_CONFIG.src, PATH_CONFIG.static.src, '**'),
+    path.resolve(process.env.PWD, '!' + PATH_CONFIG.src, PATH_CONFIG.static.src, 'README.md')
   ],
-  dest: path.join(config.root.dest, config.tasks.static.dest)
+  dest: path.resolve(process.env.PWD, PATH_CONFIG.dest, PATH_CONFIG.static.dest)
 }
 
 var staticTask = function() {

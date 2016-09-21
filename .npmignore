@@ -1,0 +1,5 @@
+extras/demo
+*.md
+.travis.yml
+.test.js
+__tests__

@@ -1,3 +1,6 @@
+global.PATH_CONFIG = require('./lib/get-path-config')
+global.TASK_CONFIG = require('./lib/get-task-config')
+
 /*
   gulpfile.js
   ===========

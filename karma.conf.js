@@ -1,9 +1,11 @@
-var config        = require('./gulpfile.js/config')
+global.PATH_CONFIG = require('./gulpfile.js/lib/get-path-config')
+global.TASK_CONFIG = require('./gulpfile.js/lib/get-task-config')
+
 var karmaWebpack  = require('karma-webpack')
 var webpackConfig = require('./gulpfile.js/lib/webpack-multi-config')
 var path          = require('path')
 
-var testSrc = path.join(config.root.src, config.tasks.js.src, '/**/__tests__/*')
+var testSrc = path.join(path.resolve(process.env.PWD, PATH_CONFIG.src, PATH_CONFIG.javascripts.src), TASK_CONFIG.javascripts.testPattern || '**/*.test.js')
 
 var karmaConfig = {
   frameworks: ['mocha', 'sinon-chai'],

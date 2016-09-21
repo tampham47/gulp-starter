@@ -1,5 +1,4 @@
-var config       = require('../config')
-if(!config.tasks.html) return
+if(!TASK_CONFIG.html) return
 
 var browserSync  = require('browser-sync')
 var data         = require('gulp-data')
@@ -11,31 +10,31 @@ var path         = require('path')
 var render       = require('gulp-nunjucks-render')
 var fs           = require('fs')
 
-var exclude = path.normalize('!**/{' + config.tasks.html.excludeFolders.join(',') + '}/**')
-
-var paths = {
-  src: [path.join(config.root.src, config.tasks.html.src, '/**/*.{' + config.tasks.html.extensions + '}'), exclude],
-  dest: path.join(config.root.dest, config.tasks.html.dest),
-}
-
-var getData = function(file) {
-  var dataPath = path.resolve(config.root.src, config.tasks.html.src, config.tasks.html.dataFile)
-  return JSON.parse(fs.readFileSync(dataPath, 'utf8'))
-}
-
 var htmlTask = function() {
+
+  var exclude = '!' + path.resolve(process.env.PWD, PATH_CONFIG.src, PATH_CONFIG.html.src, '**/{' + TASK_CONFIG.html.excludeFolders.join(',') + '}/**')
+
+  var paths = {
+    src: [path.resolve(process.env.PWD, PATH_CONFIG.src, PATH_CONFIG.html.src, '**/*.{' + TASK_CONFIG.html.extensions + '}'), exclude],
+    dest: path.resolve(process.env.PWD, PATH_CONFIG.dest, PATH_CONFIG.html.dest),
+  }
+
+  var getData = function(file) {
+    var dataPath = path.resolve(process.env.PWD, PATH_CONFIG.src, PATH_CONFIG.html.src, TASK_CONFIG.html.dataFile)
+    return JSON.parse(fs.readFileSync(dataPath, 'utf8'))
+  }
 
   return gulp.src(paths.src)
     .pipe(data(getData))
     .on('error', handleErrors)
     .pipe(render({
-      path: [path.join(config.root.src, config.tasks.html.src)],
+      path: [path.resolve(process.env.PWD, PATH_CONFIG.src, PATH_CONFIG.html.src)],
       envOptions: {
         watch: false
       }
     }))
     .on('error', handleErrors)
-    .pipe(gulpif(global.production, htmlmin(config.tasks.html.htmlmin)))
+    .pipe(gulpif(global.production, htmlmin(TASK_CONFIG.html.htmlmin)))
     .pipe(gulp.dest(paths.dest))
     .pipe(browserSync.stream())
 

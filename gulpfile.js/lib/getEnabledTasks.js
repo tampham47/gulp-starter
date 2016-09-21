@@ -1,15 +1,14 @@
-var config  = require('../config')
 var compact = require('lodash/compact')
 
 // Grouped by what can run in parallel
 var assetTasks = ['fonts', 'iconFont', 'images', 'svgSprite']
-var codeTasks = ['html', 'css', 'js']
+var codeTasks = ['html', 'stylesheets', 'javascripts']
 
 module.exports = function(env) {
 
   function matchFilter(task) {
-    if(config.tasks[task]) {
-      if(task === 'js') {
+    if(TASK_CONFIG[task]) {
+      if(task === 'javascripts') {
         task = env === 'production' ? 'webpack:production' : false
       }
       return task
